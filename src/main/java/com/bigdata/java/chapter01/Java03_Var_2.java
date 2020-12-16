@@ -18,5 +18,11 @@ public class Java03_Var_2 {
         cs[2] = 'd';
         System.out.println("!"+s+"!");
 
+        short ss = 10;
+        byte b = 10;
+
+        //“+”默认升格为int
+        // 错误: ss = ss + b;
+
     }
 }
