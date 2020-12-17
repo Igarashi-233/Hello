@@ -1,4 +1,4 @@
-package com.bigdata.java.chapter01;
+package com.bigdata.java.chapter;
 
 public class Java01_Hello {
     public static void main(String[] args) {

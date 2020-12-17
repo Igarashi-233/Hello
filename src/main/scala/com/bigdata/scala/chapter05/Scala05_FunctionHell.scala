@@ -21,10 +21,10 @@ object Scala05_FunctionHell {
 
 
     //简化
-    def f1(i : Int) = {
-      def f2(j : Int): Int = {
+    def f1(i: Int) = {
+      def f2(j: Int): Int = {
         println("xxxxxxx")
-        i*j
+        i * j
       }
 
       f2 _
@@ -32,28 +32,58 @@ object Scala05_FunctionHell {
     println(f1(2)(3))
 
     //TODO 再简化 函数柯里化
-    def f3(i:Int)(j:Int):Int = {
-      i*j
+    def f3(i: Int)(j: Int): Int = {
+      i * j
     }
     println(f3(3)(3))
 
 
     //将函数作为参数传递给另外一个函数 需要采用特殊的声明方式
     // 参数列表 => 返回值类型
-    def f4( f : Int => Int ) ={
+    def f4(f: Int => Int) = {
       f(2) + 10
     }
-    def f5(i:Int): Int ={
-      i*5
+
+    def f5(i: Int): Int = {
+      i * 5
     }
     println(f4(f5))
 
 
     //匿名函数改善
-    def f6(f : ()=> Unit): Unit ={
+    def f6(f: () => Unit): Unit = {
       f()
     }
-    f6(()=>{println("xxxxxx")})
+
+    f6(() => {
+      println("xxxxxx")
+    })
+
+    def f7(f: (Int,Int) => Int): Int = {
+      f(233 , 233)
+    }
+
+    /*
+    一个参数
+    def f7(f: Int => Unit): Unit = {
+      f(233)
+    }
+    f7((i:Int)=>{println(i)})
+    f7(i=>{println(i)})
+    f7(i=>println(i))
+    f7( println(_) )
+    f7(println)
+    */
+
+//    def f8(i : Int, j:Int): Int={
+//      i+j
+//    }
+//    println(f7(f8))
+    //匿名函数实现
+    println( f7( (x: Int, y: Int) =>{x + y} ) )
+    println( f7( (x,y)=>{x+y} ) )
+    println( f7( (x,y)=>x+y ) )
+    println( f7( _+_ ) )
 
   }
 }

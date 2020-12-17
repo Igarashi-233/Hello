@@ -42,6 +42,8 @@ object Scala03_Function2 {
     ()->{
       println("XXXXXXXXXXXXX")
     }
+//    val f: () => Unit = () => {}
+//    f()
 
   }
 }

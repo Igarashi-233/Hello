@@ -1,4 +1,4 @@
-package com.bigdata.java.chapter01;
+package com.bigdata.java.chapter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
