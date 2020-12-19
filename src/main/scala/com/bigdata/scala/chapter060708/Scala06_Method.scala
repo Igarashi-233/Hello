@@ -12,10 +12,6 @@ object Scala06_Method {
     val str = user+"xxxxxxxx"
     println(str)
 
-
-
-
-
   }
 }
 

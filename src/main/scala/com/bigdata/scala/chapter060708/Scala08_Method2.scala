@@ -4,9 +4,9 @@ package com.bigdata.scala.chapter060708
 object Scala08_Method2 {
   def main(args: Array[String]): Unit = {
     //创建对象
-    val user = new User08("IGARASHI")
+//    val user = new User08("IGARASHI")
     val user1 = new User08()
-    println(user)
+//    println(user)
 
 
   }

@@ -37,7 +37,7 @@ package p1 {
       var username = "IGARASHI"
       private var password = "123456"
       protected var email = "igarashi233@sina.com"
-      private[p3] var address = "XXxxXX"
+//      private[p3] var address = "XXxxXX"
     }
 
   }
@@ -49,8 +49,8 @@ package p1 {
     class EmpP3 extends UserP2 {
       def test(): Unit = {
         val user = new UserP2
-        user.username
-        user.address
+//        user.username
+//        user.address
 
       }
     }
