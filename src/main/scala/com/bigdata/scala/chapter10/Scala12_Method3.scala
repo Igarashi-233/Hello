@@ -14,9 +14,15 @@ object Scala12_Method3 {
     val i1 = list.foldLeft(100)(_ - _)
     println(i1)
 
+    val scanList = list.scanLeft(10)(_ - _)
+    println(scanList)
+
 
     val i2 = list.foldRight(10)(_ - _)
     println(i2)
+
+    val scanList1 = list.scanRight(10)(_ - _)
+    println(scanList1)
 
 
   }
