@@ -58,6 +58,7 @@ object Scala03_For {
       println(s"$i")
       "abc"
     }
+    println(unit)
     //特殊情况  采用yield  可以将每一次循环的结果保存到集合中返回
     val res = for (i <- 1 to 10) yield i * 2
     println(res)

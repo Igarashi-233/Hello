@@ -17,6 +17,7 @@ object Scala05_FunctionHell {
       //直接返回函数本身 不执行
       f _
     }
+    println(f0())
     f0()()
 
 

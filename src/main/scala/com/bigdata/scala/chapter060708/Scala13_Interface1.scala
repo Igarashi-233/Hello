@@ -12,7 +12,7 @@ object Scala13_Interface1 {
     //scala特质中可以直接执行代码
     //scala特质中生命的属性和方法都可以在类中直接调用
     //    new TestTrait13()
-    val user1 = new User13()
+    val user1 = new User13
     user1.username = "Mirai"
     println(user1.username)
     user1.test()

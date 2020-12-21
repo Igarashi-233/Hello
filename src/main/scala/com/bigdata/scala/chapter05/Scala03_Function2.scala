@@ -7,7 +7,7 @@ object Scala03_Function2 {
     //函数声明时 明确返回值为Unit 即使有return也不起作用
     def test(): Unit = {
       println("Hello Scala")
-      return "IGARASHI"
+      "IGARASHI"
     }
     println(test())
 

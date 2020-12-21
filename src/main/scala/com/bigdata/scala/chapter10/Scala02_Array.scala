@@ -1,6 +1,5 @@
 package com.bigdata.scala.chapter10
 
-import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 
